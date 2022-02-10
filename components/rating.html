@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <a class="link white" href="../index.html">
+        <h2 class="nav-logo">ProteanUI</h2>
+      </a>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+    <div class="docs-body">
+      <aside class="aside-list">
+        <ul class="list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link">Badge</li></a
+          >
+          <a class="link" href="../components/button.html"
+            ><li class="aside-link">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link">Card</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link aside-link-active">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
+
+      <div class="component-container">
+        <h1>Rating</h1>
+
+        <h2>Rated component</h2>
+
+        <p class="component-description">Used to display the rating of an product to the user.</p>
+
+        <div class="component-example-container">
+          <div class="rated" style="--stars: 4.5"></div>
+          <div class="rated" style="--stars: 4"></div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Frating-1-rated.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h1>Rating component</h1>
+
+        <p class="component-description">Used to collect user feedback.</p>
+        <div class="component-example-container">
+          <div class="rating-group">
+            <input
+              class="rating-input rating-input-none"
+              checked
+              name="rating"
+              id="rating-0"
+              value="0"
+              type="radio"
+            />
+            <label class="rating-label" for="rating-0">&nbsp;</label>
+            <label class="rating-label rating-label--half" for="rating-05"
+              ><i class="rating-icon rating-icon-star fa fa-star-half"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-05"
+              value="0.5"
+              type="radio"
+            />
+            <label class="rating-label" for="rating-10"
+              ><i class="rating-icon rating-icon-star fa fa-star"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-10"
+              value="1"
+              type="radio"
+            />
+            <label class="rating-label rating-label--half" for="rating-15"
+              ><i class="rating-icon rating-icon-star fa fa-star-half"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-15"
+              value="1.5"
+              type="radio"
+            />
+            <label class="rating-label" for="rating-20"
+              ><i class="rating-icon rating-icon-star fa fa-star"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-20"
+              value="2"
+              type="radio"
+            />
+            <label class="rating-label rating-label--half" for="rating-25"
+              ><i class="rating-icon rating-icon-star fa fa-star-half"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-25"
+              value="2.5"
+              type="radio"
+            />
+            <label class="rating-label" for="rating-30"
+              ><i class="rating-icon rating-icon-star fa fa-star"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-30"
+              value="3"
+              type="radio"
+            />
+            <label class="rating-label rating-label--half" for="rating-35"
+              ><i class="rating-icon rating-icon-star fa fa-star-half"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-35"
+              value="3.5"
+              type="radio"
+            />
+            <label class="rating-label" for="rating-40"
+              ><i class="rating-icon rating-icon-star fa fa-star"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-40"
+              value="4"
+              type="radio"
+            />
+            <label class="rating-label rating-label--half" for="rating-45"
+              ><i class="rating-icon rating-icon-star fa fa-star-half"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-45"
+              value="4.5"
+              type="radio"
+            />
+            <label class="rating-label" for="rating-50"
+              ><i class="rating-icon rating-icon-star fa fa-star"></i
+            ></label>
+            <input
+              class="rating-input"
+              name="rating"
+              id="rating-50"
+              value="5"
+              type="radio"
+            />
+          </div>
+        </div>
+        <div class="snippet-container"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>

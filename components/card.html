@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card component</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <a class="link white" href="../index.html">
+        <h2 class="nav-logo">ProteanUI</h2>
+      </a>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+    <div class="docs-body">
+      <aside class="aside-list">
+        <ul class="list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link">Badge</li></a
+          >
+          <a class="link" href="../components/button.html"
+            ><li class="aside-link">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link aside-link-active">Card</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
+
+      <div class="component-container">
+        <h1>Card</h1>
+        <p class="component-description">
+          Card components are used to display information about a something in a comprehensive manner. Protean provides seven types of cards.
+        </p>
+
+        <h2>Vertical Card</h2>
+
+        <p class="component-description">
+          Displays the content vertically.
+        </p>
+
+        <div class="component-example-container">
+          <div class="card">
+            <p class="card-title">Title goes here</p>
+            <p class="card-subtitle">SubText</p>
+            <img class="card-img" src="https://picsum.photos/300/200" />
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+              consequuntur quis.
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Read</button>
+              <i class="card-icon material-icons">favorite_border</i>
+
+              <i class="card-icon material-icons">more_vert</i>
+            </div>
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-1-vertical.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Horizontal Card</h2>
+
+        <p class="component-description">
+          Displays the content Horizontally.
+        </p>
+
+
+        <div class="component-example-container">
+          <div class="card">
+            <div class="card-horizontal-container">
+              <img
+                class="card-img-horizontal"
+                src="https://picsum.photos/300/200"
+              />
+              <div class="">
+                <p class="card-title">Title goes here</p>
+                <p class="card-subtitle">SubText</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+              consequuntur quis.
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Read</button>
+              <i class="card-icon material-icons">favorite_border</i>
+
+              <i class="card-icon material-icons">more_vert</i>
+            </div>
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-2-horixontal.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Card with badge</h2>
+
+        <p class="component-description">
+          This is an example of vertical card with a badge.
+        </p>
+
+        <div class="component-example-container">
+          <div class="card">
+            <img
+              class="card-img-bordered"
+              src="https://picsum.photos/300/200"
+            />
+            <p class="card-title">Title goes here</p>
+            <p class="card-subtitle">SubText</p>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+              consequuntur quis.
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Read</button>
+              <i class="card-icon material-icons">favorite_border</i>
+
+              <i class="card-icon material-icons">more_vert</i>
+            </div>
+            <div class="tag">New</div>
+          </div>
+        </div>
+        <div class="snippet-container">
+            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-3-with-badge.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+      </div>
+
+      <h2>Collapsiable card</h2>
+
+      <p class="component-description">
+        User can close the collapsiable cards.
+      </p>
+
+        <div class="component-example-container">
+            <div class="card">
+                <img class="card-img-bordered" src="https://picsum.photos/300/200" />
+                <p class="card-title">Title goes here</p>
+                <p class="card-subtitle">SubText</p>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+                  consequuntur quis.
+                </p>
+                <div class="card-actions">
+                  <button class="btn btn-primary">Read</button>
+  
+                  <i class="card-icon material-icons">favorite_border</i>
+      
+                    <i class="card-icon material-icons">more_vert</i>
+                </div>
+                  <i class="dismiss-icon material-icons">close</i>
+              </div>
+        </div>
+        <div class="snippet-container">
+            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-4-collapsiable.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+      </div>
+
+      <h2>Card with text overlay</h2>
+
+      <p class="component-description">
+        Heading and subtext will be displayed on top of the image.
+      </p>
+
+      <div class="component-example-container">
+        <div class="card">
+            <div class="overlay">
+              <img class="card-img-bordered" src="https://picsum.photos/300/200" />
+              <div class="overlay-content">
+                <p class="card-title">Title goes here</p>
+                <p class="card-subtitle">SubText</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+              consequuntur quis.
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Read</button>
+              <i class="card-icon material-icons">favorite_border</i>
+  
+                <i class="card-icon material-icons">more_vert</i>
+            </div>
+          </div>
+      </div>
+      <div class="snippet-container">
+        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-5-overlay.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+    </div>
+
+    <h2>Card with border</h2>
+
+    <p class="component-description">Example of vertical card with border.</p>
+
+    <div class="component-example-container">
+        <div class="card card-bordered">
+            <p class="card-title">Title goes here</p>
+            <p class="card-subtitle">SubText</p>
+            <img class="card-img" src="https://picsum.photos/300/200" />
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+              consequuntur quis.
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Read</button>
+              <i class="card-icon material-icons">favorite_border</i>
+                <i class="card-icon material-icons">more_vert</i>
+            </div>
+          </div>
+    </div>
+    <div class="snippet-container">
+        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-6-bordered.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+  </div>
+
+  <h2>Text only card</h2>
+
+  <p class="component-description">
+    Example of vertical card with only text.
+  </p>
+
+  <div class="component-example-container">
+    <div class="card">
+        <p class="card-title">Title goes here</p>
+        <p class="card-subtitle">SubText</p>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in
+          consequuntur quis.
+        </p>
+      </div>
+  </div>
+  <div class="snippet-container">
+    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fcard-7-text-only.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+</div>
+    </div>
+  </body>
+
+  <style>
+
+    @media screen and (max-width: 500px) {
+      /* .snippet-container {
+        width: 50%;
+        margin: auto;
+      } */
+      .card{
+        max-width: 30rem;
+      }
+      .card-icon{
+        padding: 0px;
+      }
+    }
+  </style>
+   <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>

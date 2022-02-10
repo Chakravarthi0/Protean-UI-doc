@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protean UI</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <h2 class="nav-logo">ProteanUI</h2>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link nav-link-active" href="#">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link" href="components/alert.html">Docs</a>
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+
+    <div class="hero text-center">
+      <div class="hero-head primary">Protean UI</div>
+      <div class="hero-description">The versatile UI</div>
+      <div class="flex-container">
+        <button class="btn btn-primary">
+          <a class="link white" href="components/alert.html">Documentation</a>
+        </button>
+        <button class="btn btn-primary-ol">Github</button>
+      </div>
+    </div>
+
+    <div class="installation-container">
+      <div class="installation-description">
+        <h1 class="installation-head">Installation</h1>
+        <p class="installation-body">
+          Copy and paste the css link in the head tag.
+        </p>
+        <p class="installation-body">
+          Similarly, copy and paste the script link after the body tag.
+        </p>
+      </div>
+
+      <div class="snippet-container">
+        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Finstallation-1.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    .snippet-container {
+      text-align: left;
+    }
+
+    @media screen and (max-width: 1575px) {
+      .installation-container {
+        display: block;
+      }
+      .snippet-container {
+        /* display: flex;
+        justify-content: center; */
+        width: 80%;
+        margin: auto;
+      }
+    }
+  </style>
+  <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>

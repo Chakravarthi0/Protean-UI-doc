@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal component</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <a class="link white" href="../index.html">
+        <h2 class="nav-logo">ProteanUI</h2>
+      </a>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+    <div class="docs-body">
+      <aside class="aside-list">
+        <ul class="list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link">Badge</li></a
+          >
+          <a class="link" href="../components/button.html"
+            ><li class="aside-link">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link">Card</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link aside-link-active">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
+
+      <div class="component-container">
+        <h1>Modal</h1>
+        <p class="component-description">
+          A modal is a message box that is displayed on top of your screen. They
+          are used to display some important notification or to get user
+          confirmation.
+        </p>
+
+        <div class="component-example-container">
+          <button
+            modal-btn-for="modal-one"
+            class="btn btn-primary-ol modal-open-btn"
+          >
+            Modal 1
+          </button>
+
+          <div id="modal-one" class="modal-bg hidden">
+            <div class="modal position-rel">
+              <h2 class="text-large list-head">Modal heading</h2>
+              <i
+                modal-btn-for="modal-one"
+                class="material-icons modal-close-btn position-abs top-0 right-0"
+                >close</i
+              >
+              <p>Modal description</p>
+              <div class="modal-actions">
+                <button
+                  modal-btn-for="modal-one"
+                  class="btn btn-primary modal-close-btn"
+                >
+                  Action 1
+                </button>
+                <button
+                  modal-btn-for="modal-one"
+                  class="btn btn-secondary modal-close-btn"
+                >
+                  Action 2
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fmodal-1.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar component</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <a class="link white" href="../index.html">
+        <h2 class="nav-logo">ProteanUI</h2>
+      </a>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+    <div class="docs-body">
+      <aside class="aside-list">
+        <ul class="list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link aside-link-active">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link">Badge</li></a
+          >
+          <a class="link" href="../components/button.html"
+            ><li class="aside-link">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link">Card</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
+
+      <div class="component-container">
+        <h1>Avatar</h1>
+        <p class="component-description">
+          Avatar is used to display user profiles.
+        </p>
+
+        <p  class="component-description">
+          You can create a avatar using the
+          <span class="code">avatar</span> class, followed by
+          <span class="code">avatar-size</span> class. Avatar comes in four
+          sizes: <span class="code">xs</span>
+          <span class="code">sm</span>
+          <span class="code">md</span> and
+          <span class="code">xl</span>
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <img
+              class="avatar avatar-xs"
+              src="../assests/img-1.jpg"
+              alt="image-1"
+            />
+            <img
+              class="avatar avatar-sm"
+              src="../assests/img-1.jpg"
+              alt="image-2"
+            />
+            <img
+              class="avatar avatar-md"
+              src="../assests/img-1.jpg"
+              alt="image-3"
+            />
+            <img
+              class="avatar avatar-lg"
+              src="../assests/img-1.jpg"
+              alt="image-4"
+            />
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Favatar.html&style=night-owl&showCopy=on"></script>
+        </div>
+
+        <h2>Avatar with initials</h2>
+
+        <p  class="component-description">If the user does not have a profile picture they can use  create an avatar just using their initials.</p>
+
+        <p  class="component-description">To create this type of avatar, you can use 
+          <span class="code">avatar</span> class,
+          <span class="code">avatar-size</span> class, followed by
+          <span class="code">avatar-initial</span> class.
+          By default the background color will be primary color. However, you can customise the alert using color and background color classes.
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <p class="avatar avatar-xs avatar-initial">SC</p>
+            <p class="avatar avatar-sm avatar-initial bg-secondary">SC</p>
+            <p class="avatar avatar-md avatar-initial bg-success">SC</p>
+            <p class="avatar avatar-lg avatar-initial bg-danger">SC</p>
+          </div>
+        </div>
+
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Favatar-2-initial.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>

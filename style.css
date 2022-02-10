@@ -1,0 +1,272 @@
+.nav-link {
+  font-size: 2rem;
+  color: black;
+}
+
+.nav-link-active {
+  color: var(--white);
+}
+
+.nav-logo {
+  font-size: 3.5rem;
+}
+
+.hero {
+  margin-top: 12rem;
+}
+
+.hero-head {
+  font-size: 8rem;
+}
+
+.hero-description {
+  font-size: 3.7rem;
+}
+
+.hero > .flex-container > .btn {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+}
+
+.installation-container {
+  margin-top: 12rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.installation-description {
+  margin-bottom: 5rem;
+}
+
+.installation-head {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+
+.installation-body {
+  font-size: 2.4rem;
+}
+
+.docs-body {
+  width: 80%;
+  /* background-color: red; */
+  /* height: 50rem; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+.aside-list {
+  height: 40vh !important;
+  width: 20%;
+}
+
+.aside-list > .list > .link {
+  /* padding: 1.5px; */
+  padding: 0px;
+}
+.aside-link {
+  cursor: pointer;
+  /* background-color: red; */
+  /* margin: 3px; */
+  /* text-align: center; */
+  padding: 1rem;
+  border-radius: 5px;
+  /* font-size: 2rem; */
+  min-width: 20rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.aside-link:hover,
+.aside-link-active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.component-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.component-description {
+  font-size: 2rem;
+}
+
+.component-example-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1575px) {
+  .installation-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar-container {
+    padding: 3rem 4%;
+  }
+  .aside-list {
+    /* display: none; */
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .aside-list {
+    display: none;
+  }
+}
+
+.snippet-container {
+  /* width: 100%; */
+  /* max-height: 35rem; */
+  /* background-color: #011627; */
+  /* display: flex;
+    justify-content: center; */
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  /* max-width: 40%; */
+  display: block;
+}
+
+.hljs {
+  padding: 5rem !important;
+}
+
+@media screen and (max-width: 500px) {
+  /* .snippet-container {
+        width: 50%;
+        margin: auto;
+      } */
+  .card {
+    max-width: 30rem;
+  }
+  /* .card-icon{
+        padding: 0px;
+      } */
+}
+
+.card-actions{
+  justify-content: space-between;
+}
+
+/* remove */
+.modal-bg {
+  z-index: 1;
+}
+
+.toast {
+  z-index: 1;
+}
+
+.slider-input {
+  border-radius: 5px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+:root {
+  --primary-transparent: rgba(80, 168, 235, 0.4);
+}
+
+.code {
+  background: var(--primary-transparent);
+  color: var(--primary-dark);
+  padding: 3px;
+}
+
+
+
+
+/*  */
+
+@import url("../../default.css");
+
+.slider-container{
+    box-shadow: var(--slider-box-shadow);
+    background-color: var(--pure-white);
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 2.5rem;
+    width: 23rem;
+    height: 1.5rem;
+}
+
+.slider{
+    position: relative;
+    width: 16rem;
+    height: 6px;
+}
+
+.slider-input{
+    border-radius: 5px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16.3rem;
+    height: 6px;
+    -webkit-appearance: none;
+    background: var(--gray-transparent);
+    z-index: 2;
+}
+
+.slider-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px var(--white);
+    border-radius: 50%;
+}
+
+.slider-input::-webkit-slider-thumb:hover{
+    transform: scale(1.1);
+}
+
+.progress-bar{
+    width: 16rem;
+    height: 6px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar::-webkit-progress-bar{
+    background-color: var(--white);
+}
+
+.progress-bar::-webkit-progress-value{
+    background: var(--primary-color);
+}
+
+.slider-value{
+    width: 1.4rem;
+    /* height: 1rem; */
+    margin-left: 17.5rem;
+    text-align: center;
+}

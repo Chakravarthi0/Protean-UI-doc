@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid component</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <a class="link white" href="../index.html">
+        <h2 class="nav-logo">ProteanUI</h2>
+      </a>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+    <div class="docs-body">
+      <aside class="aside-list">
+        <ul class="list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link">Badge</li></a
+          >
+          <a class="link" href="../components/button.html"
+            ><li class="aside-link">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link">Card</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link aside-link-active">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
+
+      <div class="component-container">
+        <h1>Grid component</h1>
+        <p class="component-description">
+          Grid component helps in laying out the page.
+        </p>
+
+        <p class="component-description">
+          Protean provides two types of grids, two item grid and three item
+          grid.
+        </p>
+
+        <p class="component-description">
+          Use the classes <span class="code">grid-container</span> and
+          <span class="code">grid-NoOfItems</span> in the grid parent element.
+          And use the class <span class="code">grid-item</span> on the grid
+          item.
+        </p>
+
+        <h2>Two element grid</h2>
+        <div class="component-example-container">
+          <div class="grid-container grid-2">
+            <div class="card grid-item">
+              <p class="card-title">Title goes here</p>
+              <p class="card-subtitle">SubText</p>
+              <img class="card-img" src="https://picsum.photos/300/200" />
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                in consequuntur quis.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Read</button>
+                <i class="card-icon material-icons">favorite_border</i>
+                <i class="card-icon material-icons">more_vert</i>
+              </div>
+            </div>
+            <div class="card grid-item">
+              <p class="card-title">Title goes here</p>
+              <p class="card-subtitle">SubText</p>
+              <img class="card-img" src="https://picsum.photos/300/200" />
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                in consequuntur quis.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Read</button>
+                <i class="card-icon material-icons">favorite_border</i>
+                <i class="card-icon material-icons">more_vert</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fgrid-1-two-element.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Three element grid</h2>
+
+        <div class="component-example-container">
+          <div class="grid-container grid-3">
+            <div class="card grid-item">
+              <p class="card-title">Title goes here</p>
+              <p class="card-subtitle">SubText</p>
+              <img class="card-img" src="https://picsum.photos/300/200" />
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                in consequuntur quis.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Read</button>
+                <i class="card-icon material-icons">favorite_border</i>
+                <i class="card-icon material-icons">more_vert</i>
+              </div>
+            </div>
+
+            <div class="card grid-item">
+              <p class="card-title">Title goes here</p>
+              <p class="card-subtitle">SubText</p>
+              <img class="card-img" src="https://picsum.photos/300/200" />
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                in consequuntur quis.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Read</button>
+                <i class="card-icon material-icons">favorite_border</i>
+                <i class="card-icon material-icons">more_vert</i>
+              </div>
+            </div>
+
+            <div class="card grid-item">
+              <p class="card-title">Title goes here</p>
+              <p class="card-subtitle">SubText</p>
+              <img class="card-img" src="https://picsum.photos/300/200" />
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                in consequuntur quis.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Read</button>
+                <i class="card-icon material-icons">favorite_border</i>
+                <i class="card-icon material-icons">more_vert</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fgrid-2-Three-elements.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>

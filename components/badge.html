@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge component</title>
+    <script
+      src="https://kit.fontawesome.com/1ca0c5a7ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://protean-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="navbar-container bg-primary white">
+      <a class="link white" href="../index.html">
+        <h2 class="nav-logo">ProteanUI</h2>
+      </a>
+      <nav>
+        <ul class="list nav-links-container">
+          <li>
+            <a class="link btn nav-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a class="link btn nav-link text-large" href="#">Github</a>
+          </li>
+        </ul>
+        <i class="material-icons hamburger-icon">menu</i>
+      </nav>
+    </header>
+    <div class="docs-body">
+      <aside class="aside-list">
+        <ul class="list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link aside-link-active">Badge</li></a
+          >
+          <a class="link" href="../components/button.html"
+            ><li class="aside-link">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link">Card</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
+
+      <div class="component-container">
+        <h1>Badge</h1>
+        <p class="component-description">
+          Badges are used to draw user's attention or to display a notification.
+        </p>
+
+        <p class="component-description">
+          Badge has two sizes small and large.
+        </p>
+
+        <p class="component-description">
+          Use <span class="code">badge-container</span> class for the parent container and <span class="code">badge</span> followed by <span class="code">badge-size</span>.
+        </p>
+
+        <h2>Text with badge</h2>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <p class="badge-container">
+              Text with badge
+              <span class="badge badge-sm">4</span>
+            </p>
+            <p class="badge-container">
+              Text with badge
+              <span class="badge badge-lg">4</span>
+            </p>
+          </div>
+        </div>
+        <div class="snippet-container">
+            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbadge-1-text.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Icon with badge</h2>
+
+        <p class="component-description">
+          Use badge alog side with icons to display notifications.
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <i class="far fa-bell badge-container">
+                <span class="badge badge-sm">6</span>
+              </i>
+        
+              <i class="far fa-bell badge-container">
+                <span class="badge badge-lg">7</span>
+              </i>
+          </div>
+        </div>
+        <div class="snippet-container">
+            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbadge-2-icon.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Avatar with badge</h2>
+
+        <p class="component-description">
+          Badges can be used with avatar to display whether the user is online or offline. 
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <p class="badge-container">
+                <img class="avatar avatar-xs" src="../assests/img-1.jpg" alt="image-1" />
+                <span class="badge-avatar badge-avatar-xs"></span>
+              </p>
+        
+              <p class="badge-container">
+                <img class="avatar avatar-sm" src="../assests/img-1.jpg" alt="image-1" />
+                <span class="badge-avatar badge-avatar-sm"></span>
+              </p>
+        
+              <p class="badge-container">
+                <img class="avatar avatar-md" src="../assests/img-1.jpg" alt="image-1" />
+                <span class="badge-avatar badge-avatar-md bg-success"></span>
+              </p>
+        
+              <p class="badge-container">
+                <img class="avatar avatar-lg" src="../assests/img-1.jpg" alt="image-1" />
+                <span class="badge-avatar badge-avatar-lg bg-danger"></span>
+              </p>
+          </div>
+        </div>
+        <div class="snippet-container">
+            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbadge-3-avatar.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+      </div>
+    </div>
+  </body>
+  <!-- not related to component, please ignore -->
+  <style>
+      .far{
+        font-size: 17px;
+      }
+  </style>
+   <script src="https://protean-ui.netlify.app/main.js"></script>
+</html>
