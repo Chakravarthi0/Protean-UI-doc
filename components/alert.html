@@ -35,8 +35,12 @@
       </nav>
     </header>
     <div class="docs-body">
-      <aside class="aside-list">
-        <ul class="list">
+      <p class="menu-dropdown">
+        Menu
+        <i class="material-icons dd-menu-icon">arrow_drop_down</i>
+      </p>
+      <aside class="aside-menu">
+        <ul class="list aside-list">
           <a class="link" href="../components/alert.html"
             ><li class="aside-link aside-link-active">Alert</li></a
           >
@@ -91,9 +95,11 @@
           Alert is used to give users feedback about their actions.
         </p>
 
-        <P class="component-description">
-          You can create an alert tag using the <span class="code">alert</span> class. You can customise the alert using color and background color classes.
-        </P>
+        <p class="component-description">
+          You can create an alert tag using the
+          <span class="code">alert</span> class. You can customise the alert
+          using color and background color classes.
+        </p>
 
         <div class="component-example-container">
           <p class="alert bg-primary">
@@ -122,13 +128,19 @@
         </div>
 
         <div class="snippet-container">
-
-            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Falert.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
-          
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Falert.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
         </div>
       </div>
     </div>
   </body>
 
   <script src="https://protean-ui.netlify.app/main.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+        copyBtnChange();
+      },0);
+    };
+  </script>
 </html>

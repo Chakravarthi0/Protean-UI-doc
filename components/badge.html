@@ -39,8 +39,11 @@
       </nav>
     </header>
     <div class="docs-body">
-      <aside class="aside-list">
-        <ul class="list">
+      <p class="menu-dropdown">Menu
+        <i class="material-icons dd-menu-icon">arrow_drop_down</i>
+      </p>
+      <aside class="aside-menu">
+        <ul class="list aside-list">
           <a class="link" href="../components/alert.html"
             ><li class="aside-link">Alert</li></a
           >
@@ -183,4 +186,12 @@
       }
   </style>
    <script src="https://protean-ui.netlify.app/main.js"></script>
+   <script src="../script.js"></script>
+   <script>
+    window.onload = function () {
+      setTimeout(() => {
+        copyBtnChange();
+      },0);
+    };
+  </script>
 </html>

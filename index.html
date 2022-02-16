@@ -46,10 +46,10 @@
       <div class="installation-description">
         <h1 class="installation-head">Installation</h1>
         <p class="installation-body">
-          Copy and paste the css link in the head tag.
+          Copy and paste the css link in the <span class="code">&#60;head&#62;</span> tag.
         </p>
         <p class="installation-body">
-          Similarly, copy and paste the script link after the body tag.
+          Similarly, copy and paste the script link after the <span class="code">&#60;body&#62;</span> tag.
         </p>
       </div>
 
@@ -77,4 +77,37 @@
     }
   </style>
   <script src="https://protean-ui.netlify.app/main.js"></script>
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+        let copyButtons = document.getElementsByClassName("copy-btn");
+  for (let i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].classList.add("btn", "btn-primary");
+    copyButtons[i].style.fontSize = "1.6rem";
+    copyButtons[i].style.textAlign = "center";
+
+    let copiedBtn = document.createElement("button");
+    copiedBtn.style.display = "none";
+    copiedBtn.classList.add("btn");
+    copiedBtn.style.backgroundColor = "#188464";
+    copiedBtn.style.fontWeight = "bold";
+    copiedBtn.innerHTML = "Copied";
+    copyButtons[i].parentNode.insertBefore(copiedBtn, copyButtons[i]);
+    copyButtons[i].addEventListener("click", function () {
+      this.style.display = "block !important";
+      copiedBtn.style.display = "block";
+
+      this.setAttribute("style", "display: none !important");
+
+      setTimeout(() => {
+        copyButtons[i].setAttribute("style", "display: block !important");
+        copyButtons[i].style.fontSize = "1.6rem";
+        copyButtons[i].style.textAlign = "center";
+        copiedBtn.style.display = "none";
+      }, 1000);
+    });
+  }
+      },0);
+    };
+  </script>
 </html>
