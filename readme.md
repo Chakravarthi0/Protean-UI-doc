@@ -25,3 +25,6 @@ Protean UI provides the following components:
  - rating
  - Slider
  - Toast
+
+https://user-images.githubusercontent.com/57091383/154819653-ed1f612c-5c3e-4123-a841-807024f70e6c.mp4
+
