@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal component</title>
+    <title>Colors</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -35,7 +35,8 @@
       </nav>
     </header>
     <div class="docs-body">
-      <p class="menu-dropdown">Menu
+      <p class="menu-dropdown">
+        Menu
         <i class="material-icons dd-menu-icon">arrow_drop_down</i>
       </p>
       <aside class="aside-menu">
@@ -55,8 +56,8 @@
           <a class="link" href="../components/card.html"
             ><li class="aside-link">Card</li></a
           >
-          <a class="link" href="../components/colors.html"
-            ><li class="aside-link">Colors</li></a
+          <a class="link" href="#"
+            ><li class="aside-link aside-link-active">Colors</li></a
           >
           <a class="link" href="../components/footer.html"
             ><li class="aside-link">Footer</li></a
@@ -73,8 +74,8 @@
           <a class="link" href="../components/list.html"
             ><li class="aside-link">List</li></a
           >
-          <a class="link" href="#"
-            ><li class="aside-link aside-link-active">Modal</li></a
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
           >
           <a class="link" href="../components/navigation.html"
             ><li class="aside-link">Navigation</li></a
@@ -95,57 +96,85 @@
       </aside>
 
       <div class="component-container">
-        <h1>Modal</h1>
+        <h1>Colors</h1>
         <p class="component-description">
-          A modal is a message box that is displayed on top of your screen. They
-          are used to display some important notification or to get user
-          confirmation.
+          The following is the theme used by Protean UI.
         </p>
 
         <p class="component-description">
-          The modal container must have an id.And that id is given as the input for button's <span class="code">modal-btn-for</span> attribute.
+          You can change the font color of an element using
+          <span class="code">color-variable</span> class. Similarly, you can
+          change the background color of an element using
+          <span class="code">bg-color-variable</span> class.
         </p>
 
         <div class="component-example-container">
-          <button
-            modal-btn-for="modal-one"
-            class="btn btn-primary-ol modal-open-btn"
-          >
-            Modal 1
-          </button>
-
-          <div id="modal-one" class="modal-bg hidden">
-            <div class="modal position-rel">
-              <h2 class="text-large list-head">Modal heading</h2>
-              <i
-                modal-btn-for="modal-one"
-                class="material-icons modal-close-btn position-abs top-0 right-0"
-                >close</i
-              >
-              <p>Modal description</p>
-              <div class="modal-actions">
-                <button
-                  modal-btn-for="modal-one"
-                  class="btn btn-primary modal-close-btn"
-                >
-                  Action 1
-                </button>
-                <button
-                  modal-btn-for="modal-one"
-                  class="btn btn-secondary modal-close-btn"
-                >
-                  Action 2
-                </button>
+          <div class="colors-container">
+            <div class="color-block bg-primary">
+              <div>
+                <p>Primary color</p>
+                <p>(var:--primary-color)</p>
               </div>
             </div>
+            <div class="color-block bg-secondary">
+              <div>
+                <p>Secondary color</p>
+                <p>(var:--secondary-color)</p>
+              </div>
+            </div>
+            <div class="color-block bg-white">
+              <div>
+                <p>white</p>
+                <p>(var:--white)</p>
+              </div>
+            </div>
+            <div class="color-block bg-warn">
+              <div>
+                <p>warn</p>
+                <p>(var:--warn)</p>
+              </div>
+            </div>
+            <div class="color-block bg-danger">
+              <div>
+                <p>danger</p>
+                <p>(var:--danger)</p>
+              </div>
+            </div>
+            <div class="color-block bg-success">
+              <div>
+                <p>success</p>
+                <p>(var:--success)</p>
+              </div>
+            </div>
+            <div class="color-block bg-gray">
+              <div>
+                <p>gray</p>
+                <p>(var:--gray)</p>
+              </div>
+            </div>
+            <div class="color-block bg-yellow">
+              <div>
+                <p>yellow</p>
+                <p>(var:--yellow)</p>
+              </div>
+            </div>
+            <div class="color-block bg-purple">
+              <div>
+                <p>purple</p>
+                <p>(var:--purple)</p>
+              </div>
+            </div>
+            <!-- <div class="color-block"></div>
+              <div class="color-block"></div>
+              <div class="color-block"></div>
+              <div class="color-block"></div>
+              <div class="color-block"></div> -->
           </div>
-        </div>
-        <div class="snippet-container">
-          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fmodal-1.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
         </div>
       </div>
     </div>
   </body>
+
   <script src="https://protean-ui.netlify.app/main.js"></script>
   <script src="../script.js"></script>
   <script>

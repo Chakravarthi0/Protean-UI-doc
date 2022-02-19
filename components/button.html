@@ -23,7 +23,9 @@
             <a class="link btn nav-link" href="../index.html">Home</a>
           </li>
           <li>
-            <a class="link btn nav-link nav-link-active" href="alert.html">Docs</a>
+            <a class="link btn nav-link nav-link-active" href="alert.html"
+              >Docs</a
+            >
           </li>
           <li>
             <a class="link btn nav-link text-large" href="#">Github</a>
@@ -34,185 +36,194 @@
     </header>
 
     <div class="docs-body">
-        <aside class="aside-list">
-            <ul class="list">
-              <a class="link" href="../components/alert.html"
-                ><li class="aside-link">Alert</li></a
-              >
-              <a class="link" href="../components/avatar.html"
-                ><li class="aside-link">Avatar</li></a
-              >
-              <a class="link" href="../components/badge.html"
-                ><li class="aside-link">Badge</li></a
-              >
-              <a class="link" href="../components/button.html"
-                ><li class="aside-link aside-link-active">Button</li></a
-              >
-              <a class="link" href="../components/card.html"
-                ><li class="aside-link">Card</li></a
-              >
-              <a class="link" href="../components/grid.html"
-                ><li class="aside-link">Grid</li></a
-              >
-              <a class="link" href="../components/image.html"
-                ><li class="aside-link">Image</li></a
-              >
-              <a class="link" href="../components/input.html"
-                ><li class="aside-link">Input</li></a
-              >
-              <a class="link" href="../components/list.html"
-                ><li class="aside-link">List</li></a
-              >
-              <a class="link" href="../components/modal.html"
-                ><li class="aside-link">Modal</li></a
-              >
-              <a class="link" href="../components/navigation.html"
-                ><li class="aside-link">Navigation</li></a
-              >
-              <a class="link" href="../components/rating.html"
-                ><li class="aside-link">Rating</li></a
-              >
-              <a class="link" href="../components/slider.html"
-                ><li class="aside-link">Slider</li></a
-              >
-              <a class="link" href="../components/text-utilities.html"
-                ><li class="aside-link">Text utilities</li></a
-              >
-              <a class="link" href="../components/toast.html"
-                ><li class="aside-link">Toast</li></a
-              >
-            </ul>
-          </aside>
+      <p class="menu-dropdown">
+        Menu
+        <i class="material-icons dd-menu-icon">arrow_drop_down</i>
+      </p>
+      <aside class="aside-menu">
+        <ul class="list aside-list">
+          <a class="link" href="../components/alert.html"
+            ><li class="aside-link">Alert</li></a
+          >
+          <a class="link" href="../components/avatar.html"
+            ><li class="aside-link">Avatar</li></a
+          >
+          <a class="link" href="../components/badge.html"
+            ><li class="aside-link">Badge</li></a
+          >
+          <a class="link" href="#"
+            ><li class="aside-link aside-link-active">Button</li></a
+          >
+          <a class="link" href="../components/card.html"
+            ><li class="aside-link">Card</li></a
+          >
+          <a class="link" href="../components/colors.html"
+            ><li class="aside-link">Colors</li></a
+          >
+          <a class="link" href="../components/footer.html"
+            ><li class="aside-link">Footer</li></a
+          >
+          <a class="link" href="../components/grid.html"
+            ><li class="aside-link">Grid</li></a
+          >
+          <a class="link" href="../components/image.html"
+            ><li class="aside-link">Image</li></a
+          >
+          <a class="link" href="../components/input.html"
+            ><li class="aside-link">Input</li></a
+          >
+          <a class="link" href="../components/list.html"
+            ><li class="aside-link">List</li></a
+          >
+          <a class="link" href="../components/modal.html"
+            ><li class="aside-link">Modal</li></a
+          >
+          <a class="link" href="../components/navigation.html"
+            ><li class="aside-link">Navigation</li></a
+          >
+          <a class="link" href="../components/rating.html"
+            ><li class="aside-link">Rating</li></a
+          >
+          <a class="link" href="../components/slider.html"
+            ><li class="aside-link">Slider</li></a
+          >
+          <a class="link" href="../components/text-utilities.html"
+            ><li class="aside-link">Text utilities</li></a
+          >
+          <a class="link" href="../components/toast.html"
+            ><li class="aside-link">Toast</li></a
+          >
+        </ul>
+      </aside>
 
       <div class="component-container">
-            <h1>Button</h1>
-            
-            <p class="component-description">
-              Buttons helps the user to perform an action with a single click.
-            </p>
+        <h1>Button</h1>
 
-            <h2>Normal buttons</h2>
+        <p class="component-description">
+          Buttons helps the user to perform an action with a single click.
+        </p>
 
-            <p class="component-description">
-              There are seven types of buttons. You can use <span class="code">btn</span> class followed by
-              <span class="code">btn btn-buttonType</span> to create a button.
-            </p>
+        <h2>Normal buttons</h2>
 
-            <p class="component-description">
-              <span class="code">btn</span> tags are designed to be used with  <span class="code">&#60;button&#62;</span> tag.
-            </p>
+        <p class="component-description">
+          There are seven types of buttons. You can use
+          <span class="code">btn</span> class followed by
+          <span class="code">btn btn-buttonType</span> to create a button.
+        </p>
 
-            <p class="component-description">
-              In addition to the seven type of buttons, you can create a button for links using <span class="code">btn-link</span>  class
-            </p>
+        <p class="component-description">
+          <span class="code">btn</span> tags are designed to be used with
+          <span class="code">&#60;button&#62;</span> tag.
+        </p>
 
-            <div class="component-example-container">
-                
-                <div class="flex-container">
-                    <button class="btn btn-primary">Primary</button>
-                    <button class="btn btn-secondary">Secondary</button>
-                    <button class="btn btn-teritary">Tertiary</button>
-                    <button class="btn btn-warn">Warning</button>
-                    <button class="btn btn-danger">Danger</button>
-                    <button class="btn btn-success">Success</button>
-                    <button class="btn btn-dark">Dark</button>
-                    <a href="#" class="btn btn-link">Link</a>
-                  </div>
+        <p class="component-description">
+          In addition to the seven type of buttons, you can create a button for
+          links using <span class="code">btn-link</span> class
+        </p>
 
-            </div>
-
-            <div class="snippet-container">
-
-                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-1.html&style=night-owl&showCopy=on"></script>
-            </div>
-
-
-            <h2>Outlined buttons</h2>
-
-            <p class="component-description">
-              Use the <span class="code">btn</span> class followed by <span class="code">btn-buttonType-ol</span> class to create outlined buttons. 
-            </p>
-
-            <div class="component-example-container">
-
-                <div class="flex-container">
-                    <button class="btn btn-primary-ol">Primary</button>
-                    <button class="btn btn-secondary-ol">Secondary</button>
-                    <button class="btn btn-teritary-ol">Tertiary</button>
-                    <button class="btn btn-warn-ol">Warning</button>
-                    <button class="btn btn-danger-ol">Danger</button>
-                    <button class="btn btn-success-ol">Success</button>
-                    <button class="btn btn-dark-ol">Dark</button>
-                  </div>
-                  
-            </div>
-
-            <div class="snippet-container">
-
-                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-2-ol.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
-
-            </div>
-
-            <h2>
-                Sized buttons
-            </h2>
-
-            <p class="component-description">
-              Buttons have three sizes, large, medium and small. By default, buttons are of medium size. The size can be changed using <span class="code">btn-buttonSize</span> class.
-            </p>
-
-            <div class="component-example-container">
-
-                <div class="flex-container">
-                    <button class="btn btn-primary btn-sm">Small</button>
-                    <button class="btn btn-primary">Medium</button>
-                    <button class="btn btn-primary btn-lg">Large</button>
-                  </div>
-
-            </div>
-
-            <div class="snippet-container">
-
-                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-3-sizes.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
-
-            </div>
-
-            <h2>Floating action buttons</h2>
-
-            <p class="component-description">
-              Floating action buttons are circular buttons, usually with a icon in the center.
-            </p>
-
-            <p class="component-description">
-              Floating action buttons can be created using the following classes: <span class="code">btn</span> , <span class="code">btn-buttonType-ol</span> and
-              <span class="code">btn-float</span> 
-            </p>
-
-            <div class="component-example-container">
-
-                  <div class="flex-container">
-              
-                    <button class="btn btn-success btn-float">
-                      <i class="material-icons">save</i>
-                    </button>
-              
-                    <button class="btn btn-primary-ol btn-float">
-                      <i class="material-icons">bookmark</i>
-                    </button>
-              
-                    <button class="btn btn-danger btn-float">
-                      <i class="material-icons">delete</i>
-                    </button>
-                  </div>
-
-            </div>
-            <div class="snippet-container">
-               
-                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-4-float.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
-
-            </div>
+        <div class="component-example-container">
+          <div class="flex-container">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-teritary">Tertiary</button>
+            <button class="btn btn-warn">Warning</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-dark">Dark</button>
+            <a href="#" class="btn btn-link">Link</a>
+          </div>
         </div>
+
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-1.html&style=night-owl&showCopy=on"></script>
+        </div>
+
+        <h2>Outlined buttons</h2>
+
+        <p class="component-description">
+          Use the <span class="code">btn</span> class followed by
+          <span class="code">btn-buttonType-ol</span> class to create outlined
+          buttons.
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <button class="btn btn-primary-ol">Primary</button>
+            <button class="btn btn-secondary-ol">Secondary</button>
+            <button class="btn btn-teritary-ol">Tertiary</button>
+            <button class="btn btn-warn-ol">Warning</button>
+            <button class="btn btn-danger-ol">Danger</button>
+            <button class="btn btn-success-ol">Success</button>
+            <button class="btn btn-dark-ol">Dark</button>
+          </div>
+        </div>
+
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-2-ol.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Sized buttons</h2>
+
+        <p class="component-description">
+          Buttons have three sizes, large, medium and small. By default, buttons
+          are of medium size. The size can be changed using
+          <span class="code">btn-buttonSize</span> class.
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <button class="btn btn-primary btn-sm">Small</button>
+            <button class="btn btn-primary">Medium</button>
+            <button class="btn btn-primary btn-lg">Large</button>
+          </div>
+        </div>
+
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-3-sizes.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+
+        <h2>Floating action buttons</h2>
+
+        <p class="component-description">
+          Floating action buttons are circular buttons, usually with a icon in
+          the center.
+        </p>
+
+        <p class="component-description">
+          Floating action buttons can be created using the following classes:
+          <span class="code">btn</span> ,
+          <span class="code">btn-buttonType-ol</span> and
+          <span class="code">btn-float</span>
+        </p>
+
+        <div class="component-example-container">
+          <div class="flex-container">
+            <button class="btn btn-success btn-float">
+              <i class="material-icons">save</i>
+            </button>
+
+            <button class="btn btn-primary-ol btn-float">
+              <i class="material-icons">bookmark</i>
+            </button>
+
+            <button class="btn btn-danger btn-float">
+              <i class="material-icons">delete</i>
+            </button>
+          </div>
+        </div>
+        <div class="snippet-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FChakravarthi0%2Fexample-snippets%2Fblob%2Fmain%2Fbutton-4-float.html&style=night-owl&showCopy=on&fetchFromJsDelivr=on"></script>
+        </div>
+      </div>
     </div>
   </body>
   <script src="https://protean-ui.netlify.app/main.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+        copyBtnChange();
+      }, 0);
+    };
+  </script>
 </html>
