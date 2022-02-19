@@ -1,3 +1,22 @@
+.color-block{
+  position: relative;
+  height: 10rem;
+  width: 18rem;
+}
+
+.color-block > *{
+  position: absolute;
+  bottom: 3px;
+  right: 1rem;
+  text-align: right;
+}
+
+.colors-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
 .nav-link {
   font-size: 2rem;
   color: black;
@@ -51,37 +70,38 @@
 
 .docs-body {
   width: 80%;
-  /* background-color: red; */
-  /* height: 50rem; */
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   margin: 0 auto;
   margin-top: 2rem;
   gap: 5rem;
 }
 
-.aside-list {
-  height: 40vh !important;
+.aside-menu {
+  height: 60rem;
   width: 20%;
+  min-width: 13rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.aside-list > .list > .link {
-  /* padding: 1.5px; */
+.aside-menu > .list > .link {
   padding: 0px;
 }
-.aside-link {
+.aside-link,
+.menu-dropdown {
   cursor: pointer;
-  /* background-color: red; */
-  /* margin: 3px; */
-  /* text-align: center; */
   padding: 1rem;
   border-radius: 5px;
-  /* font-size: 2rem; */
-  min-width: 20rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
+  max-width: 25rem;
+}
+
+.menu-dropdown {
+  font-size: 2rem;
+  display: none;
 }
 
 .aside-link:hover,
@@ -97,6 +117,7 @@
 
 .component-description {
   font-size: 2rem;
+  line-height: 3rem;
 }
 
 .component-example-container {
@@ -110,38 +131,10 @@
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 1575px) {
-  .installation-container {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .navbar-container {
-    padding: 3rem 4%;
-  }
-  .aside-list {
-    /* display: none; */
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .aside-list {
-    display: none;
-  }
-}
-
 .snippet-container {
-  /* width: 100%; */
-  /* max-height: 35rem; */
-  /* background-color: #011627; */
-  /* display: flex;
-    justify-content: center; */
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
-  /* max-width: 40%; */
   display: block;
 }
 
@@ -150,19 +143,12 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* .snippet-container {
-        width: 50%;
-        margin: auto;
-      } */
   .card {
     max-width: 30rem;
   }
-  /* .card-icon{
-        padding: 0px;
-      } */
 }
 
-.card-actions{
+.card-actions {
   justify-content: space-between;
 }
 
@@ -179,12 +165,12 @@
   border-radius: 5px;
 }
 
-body {
-  font-size: 1.6rem;
+footer{
+  width: 100%;
 }
 
-:root {
-  --primary-transparent: rgba(80, 168, 235, 0.4);
+body {
+  font-size: 1.6rem;
 }
 
 .code {
@@ -193,80 +179,106 @@ body {
   padding: 3px;
 }
 
+/* aside - scrollbar */
 
+.aside-menu::-webkit-scrollbar {
+  width: 8px;
+}
 
+/* Track */
+.aside-menu::-webkit-scrollbar-track {
+  background-color: var(--primary-transparent);
+  border-radius: 8px;
+}
 
-/*  */
+/* Handle */
+.aside-menu::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 8px;
+}
 
-@import url("../../default.css");
+/* Handle on hover */
+.aside-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
 
-.slider-container{
-    box-shadow: var(--slider-box-shadow);
-    background-color: var(--pure-white);
+/* copy-btn */
+.emgithub-container .copy-btn-dark {
+  display: block !important;
+  background-color: var(--primary-color) !important;
+  background-color: var(--primary-dark) !important;
+  color: var(--white) !important;
+}
+
+@media screen and (max-width: 1575px) {
+  .installation-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .colors-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar-container {
+    padding: 3rem 4%;
+  }
+  .aside-menu {
+    width: 30%;
+  }
+  .colors-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-head {
+    font-size: 7rem;
+  }
+
+  .hero-description {
+    font-size: 3rem;
+  }
+
+  .menu-dropdown {
     display: flex;
     align-items: center;
-    border-radius: 5rem;
-    padding: 2.5rem;
-    width: 23rem;
-    height: 1.5rem;
+    color: var(--black);
+    width: max-content;
+  }
+  .aside-menu {
+    position: sticky;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 15rem !important;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .aside-list {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: none;
+  }
+  .docs-body {
+    display: block;
+  }
+  .color-block{
+    height: 12rem;
+    width: 15rem;
+  }
 }
 
-.slider{
-    position: relative;
-    width: 16rem;
-    height: 6px;
-}
-
-.slider-input{
-    border-radius: 5px;
-    border: none;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 16.3rem;
-    height: 6px;
-    -webkit-appearance: none;
-    background: var(--gray-transparent);
-    z-index: 2;
-}
-
-.slider-input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: var(--white);
-    border: 2px solid var(--primary-color);
-    cursor: pointer;
-    box-shadow: 0 0 0 1px var(--white);
-    border-radius: 50%;
-}
-
-.slider-input::-webkit-slider-thumb:hover{
-    transform: scale(1.1);
-}
-
-.progress-bar{
-    width: 16rem;
-    height: 6px;
-    -webkit-appearance: none;
-    position: absolute;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress-bar::-webkit-progress-bar{
-    background-color: var(--white);
-}
-
-.progress-bar::-webkit-progress-value{
-    background: var(--primary-color);
-}
-
-.slider-value{
-    width: 1.4rem;
-    /* height: 1rem; */
-    margin-left: 17.5rem;
-    text-align: center;
+@media screen and (max-width: 400px){
+  .colors-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .eg-footer{
+    padding: 2rem 1rem;
+  }
+  .eg-social-links{
+    gap: 3rem;
+  }
 }
